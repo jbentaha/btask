@@ -1,46 +1,54 @@
+# Compiled class files
+**/target/
+**/build/
+
 # Maven specific
-btask-service-users/target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/pom.xml
-!**/src/test/**/pom.xml
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+**/release.properties
+**/dependency-reduced-pom.xml
+**/buildNumber.properties
+**/.mvn/timing.properties
+**/.mvn/wrapper/maven-wrapper.jar
+**/.mvn/wrapper/maven-wrapper.properties
+**/.mvn/wrapper/MavenWrapperDownloader.java
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
 
-# Gradle specific
-.gradle/
-build/
-
-# Java specific
-*.class
-*.log
+# Package files
+*.jar
 *.war
 *.nar
 *.ear
 *.zip
 *.tar.gz
 *.rar
-hs_err_pid*
 
-# IDE specific
-*.idea/
+# IntelliJ IDEA specific
+.idea/
 *.iml
 *.iws
 *.ipr
-.vscode/
-*.swp
-*~.nib
-local.properties
-.swo
-*.swp
-*.sublime-workspace
 
-# OS specific
+# VS Code specific
+.vscode/
+
+# Eclipse specific
+.classpath
+.project
+.settings/
+
+# NetBeans specific
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Operating system files
 .DS_Store
 .DS_Store?
 ._*
@@ -48,3 +56,15 @@ local.properties
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Swap files
+*.swp
+*~.nib
+local.properties
+.swo
+*.swp
+*.sublime-workspace
+
+# Ignore Maven wrapper directory
+**/.mvn/
+
