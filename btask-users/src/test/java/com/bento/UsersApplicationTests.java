@@ -1,4 +1,4 @@
-package com.bento.btask;
+package com.bento;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
