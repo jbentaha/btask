@@ -1,4 +1,4 @@
-package org.example;
+package com.bento;
 
 import com.jayway.restassured.RestAssured;
 import org.junit.Before;

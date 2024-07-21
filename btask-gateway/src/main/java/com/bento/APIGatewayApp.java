@@ -1,13 +1,13 @@
-package com.bento.btask;
+package com.bento;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BtaskApplication {
+public class APIGatewayApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BtaskApplication.class, args);
+		SpringApplication.run(APIGatewayApp.class, args);
 	}
 
 }
