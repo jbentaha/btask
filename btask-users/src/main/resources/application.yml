@@ -11,7 +11,7 @@ spring:
       exclude: static/**,templates/**
     livereload:
       enabled: true
-
+  
 eureka:
   client:
     serviceUrl:
