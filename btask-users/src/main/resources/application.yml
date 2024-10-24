@@ -4,6 +4,22 @@ server:
 spring:
   application:
     name: users-microservice
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/btask-dev01
+    username: postgres
+    password: Jaouad_1993
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      default_schema: btask_dev
+      dialect: org.hibernate.dialect.PostgreSQLDialect  # Specify the Hibernate dialect
+      ddl-auto: update  # Change to 'validate' or 'none' in production
+    show-sql: true  # Set to true to show SQL queries in logs
+    properties:
+      hibernate:
+        format_sql: true
+
   devtools:
     restart:
       enabled: true
@@ -11,8 +27,11 @@ spring:
       exclude: static/**,templates/**
     livereload:
       enabled: true
-  
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
+
+jwt:
+  secret: OSic73aixNdRb9YPovGvt4zBspQsfzJTGjLCO41je-hLZaeFAUl-j6qT_juyPyutQQZAL70Xq48enhdAfEVGbg
