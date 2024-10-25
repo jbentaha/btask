@@ -3,7 +3,7 @@ package com.bento.service;
 import com.bento.dto.UserDTO;
 import com.bento.exception.EmailAlreadyExistsException;
 import com.bento.mapper.UserMapper;
-import com.bento.security.user.BUserRepository;
+import com.btask.user.BUserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,0 +1,28 @@
+logging:
+  level:
+    org.springframework:
+      web: debug
+      security: debug
+
+spring:
+  application:
+    name: auth-core
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/btask-dev01
+    username: postgres
+    password: Jaouad_1993
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      default_schema: btask_dev
+      dialect: org.hibernate.dialect.PostgreSQLDialect  # Specify the Hibernate dialect
+      ddl-auto: update  # Change to 'validate' or 'none' in production
+    show-sql: true  # Set to true to show SQL queries in logs
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: b3JkZXJjYW1wY29yYWdlYXBvY2FzdHByb3RvY29kaW5nbWV0YWRvcmVkY2hpbGVtYXBsaXRob25ld2luZG93aXRobG91c2UtYnNzYXRlcmVwZXJhbGlz
+

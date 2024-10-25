@@ -1,6 +1,6 @@
-package com.bento.security.token;
+package com.btask.token;
 
-import com.bento.security.user.BUserDetailsService;
+import com.btask.user.BUserDetailsService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

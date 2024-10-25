@@ -2,8 +2,8 @@ package com.bento.controller;
 
 import com.bento.dto.LoginRequest;
 import com.bento.dto.UserDTO;
-import com.bento.security.token.JwtTokenUtil;
 import com.bento.service.UserService;
+import com.btask.token.JwtTokenUtil;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

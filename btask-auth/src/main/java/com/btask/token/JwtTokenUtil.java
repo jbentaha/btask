@@ -1,4 +1,4 @@
-package com.bento.security.token;
+package com.btask.token;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

@@ -1,4 +1,4 @@
-package com.bento.security.user;
+package com.btask.user;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

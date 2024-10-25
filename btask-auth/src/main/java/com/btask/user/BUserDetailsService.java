@@ -1,4 +1,4 @@
-package com.bento.security.user;
+package com.btask.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

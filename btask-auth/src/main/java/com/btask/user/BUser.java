@@ -1,6 +1,5 @@
-package com.bento.security.user;
+package com.btask.user;
 
-import com.bento.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

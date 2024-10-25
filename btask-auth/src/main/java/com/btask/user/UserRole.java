@@ -1,4 +1,4 @@
-package com.bento.enums;
+package com.btask.user;
 
 public enum UserRole {
 

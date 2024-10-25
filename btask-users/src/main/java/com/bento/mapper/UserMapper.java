@@ -1,8 +1,8 @@
 package com.bento.mapper;
 
 import com.bento.dto.UserDTO;
-import com.bento.enums.UserRole;
-import com.bento.security.user.BUser;
+import com.btask.user.BUser;
+import com.btask.user.UserRole;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
