@@ -8,4 +8,6 @@ public interface BUserRepository extends JpaRepository<BUser, Long> {
 
 	Optional<BUser> findByEmail(String email);
 
+	boolean existsByEmail(String email);
+
 }

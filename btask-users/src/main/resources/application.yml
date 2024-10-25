@@ -1,6 +1,12 @@
 server:
   port: 8084
 
+logging:
+  level:
+    org.springframework:
+      web: debug
+      security: debug
+
 spring:
   application:
     name: users-microservice
@@ -34,4 +40,5 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 jwt:
-  secret: OSic73aixNdRb9YPovGvt4zBspQsfzJTGjLCO41je-hLZaeFAUl-j6qT_juyPyutQQZAL70Xq48enhdAfEVGbg
+  secret: b3JkZXJjYW1wY29yYWdlYXBvY2FzdHByb3RvY29kaW5nbWV0YWRvcmVkY2hpbGVtYXBsaXRob25ld2luZG93aXRobG91c2UtYnNzYXRlcmVwZXJhbGlz
+

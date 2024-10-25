@@ -1,13 +1,19 @@
 package com.bento.security.user;
 
+import com.bento.enums.UserRole;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "users")
 public class BUser {
 
@@ -27,6 +33,8 @@ public class BUser {
 	private boolean enabled;
 
 	@ElementCollection(fetch = FetchType.EAGER)
-	private List<String> roles = new ArrayList<>();
+	@CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
+	@Enumerated(EnumType.STRING)
+	private List<UserRole> roles;
 
 }

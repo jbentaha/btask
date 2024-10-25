@@ -11,14 +11,15 @@ public class BUserDetails implements UserDetails {
 
 	private final BUser user;
 
-	public BUserDetails(BUser user) {
+	public BUserDetails(final BUser user) {
 		this.user = user;
 	}
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		return user.getRoles().stream()
-				.map(SimpleGrantedAuthority::new)
+		return user.getRoles()//
+				.stream()//
+				.map(role -> new SimpleGrantedAuthority(role.name()))//
 				.collect(Collectors.toList());
 	}
 
