@@ -1,5 +1,9 @@
 package com.btask.token;
 
+import com.btask.StringUtil;
+import com.btask.user.BUser;
+import com.btask.user.BUserDetails;
+import com.btask.user.UserRole;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -10,10 +14,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
-import java.util.Base64;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @Component
 public class JwtTokenUtil {
@@ -25,7 +26,28 @@ public class JwtTokenUtil {
 
 	public String generateToken(@NotNull final UserDetails userDetails) {
 		final Map<String, Object> claims = new HashMap<>();
+		setClaims(claims, userDetails);
 		return doGenerateToken(claims, userDetails.getUsername());
+	}
+
+	private void setClaims(Map<String, Object> claims, UserDetails userDetails) {
+		BUser user = ((BUserDetails) userDetails).user();
+		claims.put("firstName", user.getFirstName());
+		claims.put("lastName", user.getLastName());
+		claims.put("lastName", user.getLastName());
+
+		StringBuilder sb = new StringBuilder();
+		List<UserRole> roles = user.getRoles();
+		int size = roles.size();
+
+		for (int i = 0; i < size; i++) {
+			sb.append(roles.get(i));
+			if (i < size - 1) {
+				sb.append(StringUtil.COMMA);
+			}
+		}
+
+		claims.put("roles", sb);
 	}
 
 	private String doGenerateToken(final Map<String, Object> claims, final String subject) {

@@ -19,6 +19,8 @@ spring:
           uri: lb://users-microservice
           predicates:
             - Path=/users/**
+          filters:
+            - AddRequestHeader=X-Request-Gateway, route-gateway-to-users
 
 eureka:
   client:

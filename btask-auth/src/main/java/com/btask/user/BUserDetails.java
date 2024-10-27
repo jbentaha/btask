@@ -7,13 +7,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
-public class BUserDetails implements UserDetails {
-
-	private final BUser user;
-
-	public BUserDetails(final BUser user) {
-		this.user = user;
-	}
+public record BUserDetails(BUser user) implements UserDetails {
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
