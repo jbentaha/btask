@@ -19,9 +19,9 @@ spring:
   jpa:
     hibernate:
       default_schema: btask_dev
-      dialect: org.hibernate.dialect.PostgreSQLDialect  # Specify the Hibernate dialect
+      dialect: org.hibernate.dialect.PostgreSQLDialect
       ddl-auto: update  # Change to 'validate' or 'none' in production
-    show-sql: true  # Set to true to show SQL queries in logs
+    show-sql: true
     properties:
       hibernate:
         format_sql: true
@@ -30,7 +30,6 @@ spring:
     restart:
       enabled: true
       additional-paths: src/main/java
-      exclude: static/**,templates/**
     livereload:
       enabled: true
 

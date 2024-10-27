@@ -8,16 +8,19 @@
 		<version>3.2.2</version>
 		<relativePath/>
 	</parent>
-	<groupId>com.bento</groupId>
-	<artifactId>api-gateway</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>api-gateway</name>
+	<groupId>com.btask</groupId>
+	<artifactId>btask-gateway</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+    <name>btask-gateway</name>
 	<description>API Gateway of Btask project</description>
-	<properties>
+
+    <properties>
 		<java.version>21</java.version>
 		<spring-cloud.version>2023.0.0</spring-cloud.version>
 	</properties>
-	<dependencies>
+
+    <dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-gateway</artifactId>

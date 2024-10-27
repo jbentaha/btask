@@ -1,8 +1,8 @@
-package com.bento.service;
+package com.btask.service;
 
-import com.bento.dto.UserDTO;
-import com.bento.exception.EmailAlreadyExistsException;
-import com.bento.mapper.UserMapper;
+import com.btask.dto.UserDTO;
+import com.btask.exception.EmailAlreadyExistsException;
+import com.btask.mapper.UserMapper;
 import com.btask.user.BUserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

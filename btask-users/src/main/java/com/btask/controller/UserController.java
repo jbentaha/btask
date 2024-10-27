@@ -1,6 +1,6 @@
-package com.bento.controller;
+package com.btask.controller;
 
-import com.bento.dto.UserDTO;
+import com.btask.dto.UserDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.btask</groupId>
-    <artifactId>btask-parent</artifactId>
+    <artifactId>btask</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>btask-auth</module>
+        <module>btask-core</module>
         <module>btask-users</module>
 		<module>btask-eureka</module>
 		<module>btask-gateway</module>

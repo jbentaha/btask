@@ -10,10 +10,12 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.bento</groupId>
-    <artifactId>users</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>users-microservice</name>
+    <groupId>com.btask</groupId>
+    <artifactId>btask-users</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>btask-users</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

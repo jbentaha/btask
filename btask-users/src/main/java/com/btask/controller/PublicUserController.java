@@ -1,8 +1,8 @@
-package com.bento.controller;
+package com.btask.controller;
 
-import com.bento.dto.LoginRequest;
-import com.bento.dto.UserDTO;
-import com.bento.service.UserService;
+import com.btask.dto.LoginRequest;
+import com.btask.dto.UserDTO;
+import com.btask.service.UserService;
 import com.btask.token.JwtTokenUtil;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

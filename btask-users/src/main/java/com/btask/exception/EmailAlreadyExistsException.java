@@ -1,4 +1,4 @@
-package com.bento.exception;
+package com.btask.exception;
 
 public class EmailAlreadyExistsException extends RuntimeException {
 

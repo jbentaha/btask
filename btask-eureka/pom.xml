@@ -8,15 +8,18 @@
         <version>3.2.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.bento</groupId>
-    <artifactId>eureka</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <groupId>com.btask</groupId>
+    <artifactId>btask-eureka</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
     <name>btask-eureka</name>
     <description>Demo project for Spring Boot</description>
+
     <properties>
         <java.version>21</java.version>
         <spring-cloud.version>2023.0.0</spring-cloud.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

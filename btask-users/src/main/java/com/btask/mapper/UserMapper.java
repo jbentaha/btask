@@ -1,6 +1,6 @@
-package com.bento.mapper;
+package com.btask.mapper;
 
-import com.bento.dto.UserDTO;
+import com.btask.dto.UserDTO;
 import com.btask.user.BUser;
 import com.btask.user.UserRole;
 import lombok.RequiredArgsConstructor;
